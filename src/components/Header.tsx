@@ -54,8 +54,8 @@ function Header() {
                 <span className={` bg-purple-700 w-5 h-1 block rounded-xl ${hambur?"rotate-135 ":""} transition-all`}></span>
               </div>
         </header>
-        <div className={`h-full w-full absolute ${hambur?"block":"hidden transition-all"} block sm:hidden bg-white top-0 z-0`}>
-          <ul>
+        <div className={`h-full w-full absolute ${hambur?"block":"hidden transition-all"} block sm:hidden bg-gray-300 top-0 z-0`}>
+          <ul className="m-12">
             <li className="my-4 text-2xl">
               <Link href="/">
                 <p>خانه</p>

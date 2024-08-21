@@ -51,7 +51,7 @@ export default function Home() {
   };
   
   return (
-    <main className="w-1/2 mx-auto mt-2 flex flex-col items-center">
+    <main className="w-3/4 sm:w-1/2 mx-auto mt-2 flex flex-col items-center">
       <div className="text-center">
         <h1 className="text-2xl mb-2 text-slate-800">صفحه ی داشبورد شخصی</h1>
         <h2 className="text-xl mt-1 text-slate-800">مدیریت برنامه‌ها</h2>
