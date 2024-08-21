@@ -60,13 +60,13 @@ function AddJob() {
   return (
     <div className="relative">
       <form
-        className="w-2/3 mx-auto mt-3 shadow-2xl p-3 rounded-xl"
+        className=" w-11/12 mx-auto mt-3 shadow-2xl p-3 rounded-xl"
         onSubmit={addJobHandler}
       >
         <h2 className="text-center mb-4">اضافه کردن تسک</h2>
         <div className="flex flex-col">
-          <div className="flex justify-around mb-3">
-            <div>
+          <div className="flex sm:flex-row flex-col justify-around mb-3">
+            <div className='flex sm:flex-row flex-col'>
               <label htmlFor="title">عنوان:</label>
               <input
                 className="bg-gray-400 rounded p-1 focus:border-none mr-2 placeholder:text-slate-700"
@@ -78,7 +78,7 @@ function AddJob() {
                 value={title}
               />
             </div>
-            <div>
+            <div className='flex sm:flex-row flex-col'>
               <label htmlFor="desc">توضیحات:</label>
               <input
                 className="bg-gray-400 rounded p-1 focus:border-none mr-2 placeholder:text-slate-700"
@@ -93,7 +93,7 @@ function AddJob() {
           </div>
           <button
             type="submit"
-            className="w-1/3 mx-auto my-3 bg-green-800 p-1 rounded text-sm align-center text-center text-white"
+            className="w-2/3 mx-auto my-3 bg-green-800 p-1 rounded text-sm align-center text-center text-white"
           >
             اضافه کردن
           </button>
