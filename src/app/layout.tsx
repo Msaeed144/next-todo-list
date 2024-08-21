@@ -22,7 +22,9 @@ export default function RootLayout({
           <div>
             <ul>
               <li className="mx-8 text-white bg-purple-700 p-3 rounded-xl hover:bg-purple-500 hover:cursor-pointer">
+              <Link href="/">
                  نسیبا تودو📑
+              </Link>
               </li>
             </ul>
           </div>
@@ -38,7 +40,11 @@ export default function RootLayout({
                 افزودن تسک
                 </Link>
               </li>
-              <li className="mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all">درباره ما</li>
+              <li className="mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all">
+               <Link href="/about-us">
+                درباره ما
+              </Link>
+                </li>
             </ul>
           </div>
           {/* <ul className=" flex justify-around">
