@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   const handleDelete = (index: number) => {
-    const updatedJobs = jobs.filter((_, i) => i !== index); // حذف آیتم با استفاده از index
+    const updatedJobs = jobs.filter((_, i) => i !== index);
     setJobs(updatedJobs);
     localStorage.setItem('jobs', JSON.stringify(updatedJobs));
   };
@@ -84,7 +84,7 @@ export default function Home() {
                       type="text"
                       value={editedTitle}
                       onChange={handleEditChange}
-                      onBlur={() => handleEditSubmit(index)} // Save on blur
+                      onBlur={() => handleEditSubmit(index)}
                       className="text-purple-700 p-1 rounded-lg"
                     />
                   ) : (

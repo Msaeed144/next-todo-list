@@ -33,7 +33,7 @@ function Home() {
         localStorage.setItem('jobs', JSON.stringify(updatedJobs));
     };
     var handleDelete = function (index) {
-        var updatedJobs = jobs.filter(function (_, i) { return i !== index; }); // حذف آیتم با استفاده از index
+        var updatedJobs = jobs.filter(function (_, i) { return i !== index; });
         setJobs(updatedJobs);
         localStorage.setItem('jobs', JSON.stringify(updatedJobs));
     };

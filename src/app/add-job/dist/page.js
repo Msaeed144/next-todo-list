@@ -34,12 +34,10 @@ function AddJob() {
     };
     var addJobHandler = function (e) {
         e.preventDefault();
-        // Clear previous error message
         setError(null);
-        // Check if title or desc are empty
         if (title.trim() === '' || desc.trim() === '') {
             setError('عنوان و توضیحات باید پر شوند!');
-            setTimeout(function () { return setError(null); }, 2000); // Clear error after 2 seconds
+            setTimeout(function () { return setError(null); }, 2000);
             return;
         }
         var newJob = { id: uuid_1.v4(), title: title, desc: desc, status: status };

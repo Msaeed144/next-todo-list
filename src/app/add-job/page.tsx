@@ -39,13 +39,11 @@ function AddJob() {
   const addJobHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Clear previous error message
     setError(null);
     
-    // Check if title or desc are empty
     if (title.trim() === '' || desc.trim() === '') {
       setError('عنوان و توضیحات باید پر شوند!');
-      setTimeout(() => setError(null), 2000); // Clear error after 2 seconds
+      setTimeout(() => setError(null), 2000);
       return;
     }
 

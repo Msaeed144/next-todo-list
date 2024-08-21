@@ -14,7 +14,7 @@ function JobDetails( { params }:{
     setJob(foundJob || null);
   },[params.id])
   if (!job) {
-    return <p>Job not found</p>;
+    return <p>صفحه مورد نظر یافت نشد</p>;
   }
   return (
     <div className="w-2/3 mx-auto mt-3 shadow-2xl p-3 rounded-xl">
