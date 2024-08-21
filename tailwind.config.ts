@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      rotate:{
+        '135':'135deg'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

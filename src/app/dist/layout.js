@@ -3,7 +3,7 @@ exports.__esModule = true;
 exports.metadata = void 0;
 var google_1 = require("next/font/google");
 require("./globals.css");
-var link_1 = require("next/link");
+var Header_1 = require("@/components/Header");
 var inter = google_1.Inter({ subsets: ["latin"] });
 exports.metadata = {
     title: "Create Next App",
@@ -13,19 +13,7 @@ function RootLayout(_a) {
     var children = _a.children;
     return (React.createElement("html", { lang: "fa", dir: "rtl" },
         React.createElement("body", { className: inter.className + " iransans bg-gray-300 text-slate-800" },
-            React.createElement("header", { className: " w-full mx-auto  py-2 text-xs flex" },
-                React.createElement("div", null,
-                    React.createElement("ul", null,
-                        React.createElement("li", { className: "mx-8 text-white bg-purple-700 p-3 rounded-xl hover:bg-purple-500 hover:cursor-pointer" },
-                            React.createElement(link_1["default"], { href: "/" }, "\u0646\u0633\u06CC\u0628\u0627 \u062A\u0648\u062F\u0648\uD83D\uDCD1")))),
-                React.createElement("div", null,
-                    React.createElement("ul", { className: "flex justify-around" },
-                        React.createElement("li", { className: "mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all" },
-                            React.createElement(link_1["default"], { href: "/" }, "\u062E\u0627\u0646\u0647")),
-                        React.createElement("li", { className: "mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all" },
-                            React.createElement(link_1["default"], { href: "/add-job" }, "\u0627\u0641\u0632\u0648\u062F\u0646 \u062A\u0633\u06A9")),
-                        React.createElement("li", { className: "mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all" },
-                            React.createElement(link_1["default"], { href: "/about-us" }, "\u062F\u0631\u0628\u0627\u0631\u0647 \u0645\u0627"))))),
+            React.createElement(Header_1["default"], null),
             children)));
 }
 exports["default"] = RootLayout;
