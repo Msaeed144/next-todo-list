@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,39 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fa" dir="rtl">
+      <body className={`${inter.className} iransans bg-gray-300 text-slate-800`}>
+        <header className=" w-full mx-auto  py-2 text-xs flex">
+          <div>
+            <ul>
+              <li className="mx-8 text-white bg-purple-700 p-3 rounded-xl hover:bg-purple-500 hover:cursor-pointer">
+                 نسیبا تودو📑
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul className="flex justify-around">
+              <li className="mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all">
+               <Link href="/">
+               خانه
+               </Link>
+                </li>
+              <li className="mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all">
+                <Link href="/add-job">
+                افزودن تسک
+                </Link>
+              </li>
+              <li className="mx-9 p-3 rounded-xl hover:bg-purple-700 hover:cursor-pointer hover:text-white transition-all">درباره ما</li>
+            </ul>
+          </div>
+          {/* <ul className=" flex justify-around">
+            <li className="p-2 rounded hover:bg-slate-800 hover:cursor-pointer transition-all">خانه</li>
+            <li className="p-2 rounded hover:bg-slate-800 hover:cursor-pointer transition-all">اضافه کردن کار</li>
+          </ul> */}
+        </header>
+        {children}
+        
+        </body>
     </html>
   );
 }
